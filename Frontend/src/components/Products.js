@@ -83,13 +83,13 @@ export default function Products() {
                                     return (
                                         <>
                                             <tr>
-                                                <th scope="row">{id + 1}</th>
-                                                <td>{element.ProductName}</td>
-                                                <td>{element.ProductPrice}</td>
-                                                <td>{element.ProductBarcode}</td>
+                                                <th scope="row" key={id + 1}>{id + 1}</th>
+                                                <td key={id + 1}>{element.ProductName}</td>
+                                                <td key={id + 1}>{element.ProductPrice}</td>
+                                                <td key={id + 1}>{element.ProductBarcode}</td>
 
-                                                <td><NavLink to={`/updateproduct/${element._id}`} className="btn btn-primary"><i className="fa-solid fa-pen-to-square"></i></NavLink></td>
-                                                <td><button className="btn btn-danger" onClick={() => deleteProduct(element._id)}><i class="fa-solid fa-trash"></i></button></td>
+                                                <td key={id + 1}><NavLink to={`/updateproduct/${element._id}`} className="btn btn-primary"><i className="fa-solid fa-pen-to-square"></i></NavLink></td>
+                                                <td key={id + 1}><button className="btn btn-danger" onClick={() => deleteProduct(element._id)}><i class="fa-solid fa-trash"></i></button></td>
 
                                             </tr>
                                         </>
