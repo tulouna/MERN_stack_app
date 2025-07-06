@@ -14,16 +14,16 @@ jobs:
 
       - name: Install dependencies
         run: |
-            cd Frontend
+            cd frontend
             npm ci
 
       - name: Run tests
         run: |
-            cd Frontend        
-            npm run test
-            
+            cd frontend        
+            npm test
+
       - name: Build
         run: |
-            cd Frontend
+            cd frontend
             npm run build
 
